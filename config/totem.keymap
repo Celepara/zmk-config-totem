@@ -31,21 +31,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_copy {
-            key-positions = <22 23>;
-            bindings = <&kp K_COPY>;
-        };
-
-        combo_paste {
-            key-positions = <22 24>;
-            bindings = <&kp K_PASTE>;
-        };
-
-        combo_cut {
-            bindings = <&kp K_CUT>;
-            key-positions = <21 22>;
-        };
-
         snippet {
             bindings = <&kp LG(LS(S))>;
             key-positions = <32 20 21>;
@@ -74,9 +59,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp Q        &kp W  &kp E                &kp R           &kp T        &kp Y    &kp U          &kp I      &kp O    &kp P
-         &mt LCTRL A  &kp S  &kp D                &kp F           &kp G        &kp H    &kp J          &kp K      &kp L    &kp SEMI
-&kp TAB  &kp Z        &kp X  &kp C                &kp V           &kp B        &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
+               &kp Q  &kp W  &kp E                &kp R           &kp T        &kp Y    &kp U          &kp I      &kp O    &kp P
+               &kp A  &kp S  &kp D                &kp F           &kp G        &kp H    &kp J          &kp K      &kp L    &kp SEMI
+&mt LCTRL TAB  &kp Z  &kp X  &kp C                &kp V           &kp B        &kp N    &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
                              &mt LEFT_ALT ESCAPE  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &kp BACKSPACE  &mo 1
             >;
         };
